@@ -768,7 +768,7 @@ body:not(.user-is-tabbing) a:focus {
 
   .interests__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2em;
   }
 

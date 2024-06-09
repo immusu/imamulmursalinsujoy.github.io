@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/logo2.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Md. Imamul Mursalin Sujoy
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#curricular" class="nav__link">Curricular Activities</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
+          <li class="nav__item"><a href="#interests" class="nav__link">Interests</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Md. Imamul Mursalin Sujoy</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A dedicated lifelong learner, driven by curiosity and a love for innovation.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I want to leverage my skills, competencies, and potential within an esteemed organization,
+               where I can contribute to the company's growth and success. I aim to enhance my 
+               professional abilities while driving technological innovation and excellence.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="images/Resume.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/cropped_image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+<!-- ***** Education ***** -->
+<section class="education" id="education">
+  <div class="row">
+    <h2>Education</h2>
+    <div class="education__content">
+      <div class="education__item">
+        <div class="education__logo">
+          <img src="./images/bracu.png" alt="BRAC University">
+        </div>
+        <div class="education__details">
+          <h3>Bachelor of Science in Computer Science and Engineering</h3>
+          <p>BRAC University, 2020 - 2024</p>
+          <p>Grade: CGPA 3.85 on the scale of 4.00</p>
+        </div>
+      </div>
+      <div class="education__item">
+        <div class="education__logo">
+          <img src="./images/ndc.png" alt="Notre Dame College">
+        </div>
+        <div class="education__details">
+          <h3>Higher Secondary School in Science</h3>
+          <p>Notre Dame College, 2017 - 2019</p>
+          <p>Grade: GPA 5.00 on the scale of 5.00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Space Survival Game</h3>
+              <p>
+                The Space Survival Game is an engaging arcade game developed as part of my computer graphics course, showcasing my proficiency 
+                in game design and implementation using OpenGL and related libraries. In this game, players navigate a spaceship through space, 
+                avoiding obstacles and enemies that become progressively more challenging over time. The core gameplay focuses on survival, 
+                requiring quick reflexes and strategic maneuvers as the game difficulty increases. The project was developed on a robust platform, 
+                utilizing OpenGL for rendering graphics, creating a visually appealing and smooth gaming experience. I employed various computer 
+                graphics techniques such as texture mapping, lighting, and animations to enhance the visual aesthetics and realism of the game. 
+                The game features a dynamically changing environment, with obstacles and enemies generated procedurally to ensure a unique and 
+                unpredictable experience in each playthrough.
+                In addition to the core mechanics, I implemented a user-friendly interface that includes score tracking, health indicators, 
+                and intuitive controls, making the game accessible to players of all skill levels. The development process involved thorough 
+                testing and optimization to ensure performance efficiency and a seamless gameplay experience.
+              </p>
+
+              <div class="work__links">
+                <a href="https://github.com/immusu/Space-Survival-Game" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/Space-Survival-Game">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Heart Disease Prediction System</h3>
+              <p>
+                The Heart Disease Prediction System is an innovative prototype designed to leverage Artificial Intelligence for predicting the 
+                likelihood of heart disease in individuals. This system was developed as a comprehensive project, utilizing a historical dataset
+                 of heart disease to train and validate various AI models. The core functionality of the system is based on multiple AI algorithms,
+                  including K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Decision Tree classifiers. Each model was meticulously trained 
+                  and tested on the dataset to evaluate their predictive accuracy and reliability. The dataset included a range of clinical parameters 
+                  such as age, gender, blood pressure, cholesterol levels, and other relevant health metrics. To develop this system, I first preprocessed 
+                  the data to handle missing values, normalize features, and split the data into training and testing sets. I then implemented the KNN 
+                  algorithm, which classifies a patient's condition based on the closest data points in the feature space. Next, I used the SVM model, 
+                  which finds the optimal hyperplane that separates the classes of patients with and without heart disease. Finally, the Decision Tree 
+                  model was implemented to create a tree-like structure of decisions based on the input features. After training the models, I conducted
+                   a comprehensive comparison of their performance using metrics such as accuracy, precision, recall, and F1-score. This comparative 
+                   analysis revealed the strengths and weaknesses of each model in predicting heart disease. Additionally, I implemented cross-validation
+                    techniques to ensure the robustness and generalizability of the models. The Heart Disease Prediction System provides an interactive 
+                    interface where users can input their health data and receive an immediate prediction of their heart disease risk. This prototype 
+                    demonstrates the potential of AI in healthcare, offering a valuable tool for early diagnosis and preventive care.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/immusu/-Heart-Disease-Prediction-System" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/-Heart-Disease-Prediction-System">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Fire Detection System</h3>
+              <p>
+                The Fire Detection System is a comprehensive hardware prototype designed to enhance fire safety through early 
+                detection and real-time alerts. The system employs a highly sensitive fire sensor, which promptly identifies 
+                the presence of fire or smoke. Additionally, the MQ-02 gas sensor is integrated to detect combustible gases, 
+                providing an extra layer of hazard detection. Upon detecting a fire or hazardous gas levels, the system leverages 
+                the HC-05 Bluetooth module to transmit immediate hazard notifications to connected smartphones. This ensures that 
+                users receive timely alerts, allowing for quick response and mitigation of potential fire-related damages. 
+                The Bluetooth module's reliable communication capabilities facilitate seamless connectivity between the detection 
+                system and the users' mobile devices. The project also involves programming microcontrollers to process sensor 
+                data and manage the communication between sensors and smartphones. The system's design emphasizes ease of installation 
+                and user-friendliness, making it suitable for various environments such as homes, offices, and industrial settings.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/immusu/Fire-Detection-System" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/Fire-Detection-System">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Online Donation System</h3>
+              <p>
+                The system is divided into two main panels: the Admin Panel and the Donor Panel, each with distinct 
+                functionalities tailored to their specific user roles. The Admin Panel allows administrators to manage 
+                and oversee the donation process effectively. Admins can add, update, or delete donation campaigns, 
+                track donation progress, and generate reports. This panel includes a dashboard that provides real-time 
+                statistics and analytics, helping admins to monitor the overall performance and engagement of the platform. 
+                Security features such as user authentication and role-based access control ensure that only authorized 
+                personnel can perform administrative tasks. The Donor Panel is designed to provide a straightforward 
+                and intuitive experience for donors. Donors can easily browse through various donation campaigns, select 
+                causes they wish to support, and make donations securely. The panel includes features such as donation 
+                history, recurring donations, and personalized thank-you messages. Donors can also create accounts to 
+                manage their profiles and track their contributions over time. The platform is built with PHP, 
+                leveraging its robust capabilities for dynamic content generation and database interaction. CSS is 
+                used to style the application, ensuring a clean and visually appealing interface. Bootstrap is incorporated 
+                to enhance responsiveness, allowing the system to function flawlessly on desktops, tablets, and mobile devices. 
+                Additional features include secure payment processing, real-time notifications, and search functionality to help 
+                users find specific campaigns quickly. The system also supports multiple payment gateways, ensuring flexibility 
+                and convenience for donors.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/immusu/Donation-Management-System_project" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/Donation-Management-System_project">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Digital Clock System</h3>
+              <p>
+                The core of the system is the 555 timer IC, configured to generate precise timing pulses. 
+                These pulses are fed into the 7493 binary counter IC, which counts the pulses and translates 
+                them into a binary format. The binary output from the 7493 IC is then decoded and displayed on 
+                the seven-segment displays, representing the hours, minutes, and seconds in a 24-hour format. 
+                This ensures accurate and readable time presentation. To enhance functionality, the Digital 
+                Clock System includes a stopwatch mode, allowing users to measure elapsed time with precision. 
+                By integrating control switches, users can start, stop, and reset the stopwatch as needed. This 
+                dual functionality makes the system versatile and practical for various timekeeping needs. 
+                The synchronization feature is another highlight of this project. The clock can be synchronized 
+                with external clock frequencies, ensuring it remains accurate even when integrated into different 
+                systems or environments. This capability is achieved through adjustable frequency dividers and 
+                synchronization circuits, demonstrating the adaptability and precision of the design. During the 
+                development process, careful attention was paid to the electrical design and circuit layout to 
+                ensure stability and accuracy. The project involved soldering components, designing circuit 
+                boards, and extensive testing to fine-tune the system's performance.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/immusu/Digital-Clock-System" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/Digital-Clock-System">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Skills ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/python.png" class="client__logo" alt="skill 1" />
+          <img src="./images/java.png" class="client__logo" alt="skill 2" />
+          <img src="./images/html.png" class="client__logo" alt="skill 3" />
+          <img src="./images/css.png" class="client__logo" alt="skill 4" />
+          <img src="./images/ms office.png" class="client__logo" alt="skill 5" />
+          <img src="./images/adobe.png" class="client__logo" alt="skill 6" />
+          <img src="./images/latex.png" class="client__logo" alt="skill 7" />
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+<!-- ***** Curricular Activities ***** -->
+<section class="curricular" id="curricular">
+  <div class="row">
+    <h2>Curricular Activities</h2>
+    <div class="curricular__content">
+      <div class="curricular__item">
+        <h3>Volunteering</h3>
+        <p>Joined as a volunteer for the 15th Convocation 2023 of BRAC University. BRAC University 
+          organized its 15th Convocation on 20 March 2023 at Bangabandhu Bangladesh-China Friendship 
+          Exhibition Center. A total of 4889 students received degrees while 31 gold medals were 
+          awarded in various categories in this convocation. 
+        </p>
+      </div>
+      <div class="curricular__item">
+        <h3>Robotics Club</h3>
+        <p>Active member of Brac University Robotics Club. As a member of the robotics club, 
+          I design, build, and program robots for competitions or projects. I collaborate with 
+          team members to solve technical challenges and continually learn and apply new 
+          skills in robotics and engineering.</p>
+      </div>
+      <div class="curricular__item">
+        <h3>GP Academy</h3>
+        <p>Completed 'Inovation@work' workshop of GP Academy where the academy 
+          provided some tricks and tips to enhance my innovative thinking and technical expertise. </p>
+      </div>
+      <div class="curricular__item">
+        <h3>Fine Arts and Crafts</h3>
+        <p>I actively engage in fine arts and crafts, exploring various mediums such as painting, 
+          sculpting, and drawing. I regularly try participate in art exhibitions and workshops 
+          to showcase my work and refine my skills. This creative outlet enhances my attention 
+          to detail and fosters innovative thinking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***** Achievements ***** -->
+<section class="achievements" id="achievements">
+  <div class="row">
+    <h2>Achievements</h2>
+    <div class="achievements__content">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>University Scholarship</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Achieved merit based scholarship from May, 2021 to September, 2024 at
+              BRAC University, Dhaka
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Best Artist Award</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Awarded for 'Best Artist' in 'S Talent' competition (2022) at 
+              Bangladesh Shilpakala Academy
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>100% Attendance Award</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Awarded for full attendance at Notre Dame College, Dhaka
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>100% Tuition Fee Waiver</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Achieved full tuition fee waiver for best academic performance from 2010 to 2016 at 
+              Mitali Bidyapith High School, Dhaka
+              
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>1st Runner Up in Chess Competition</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Achieved 1st runner up in inter school chess competition (2016) at 
+              Mitali Bidyapith High School, Dhaka              
+              </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Winner in Essay Competition</h3>
+          </div>
+          <div class="flip-card-back">
+            <p>Achieved 1st place in intra school essay competition on 'Bangabandur Bangaldesh'
+               (2016) at 
+              Mitali Bidyapith High School, Dhaka
+                            
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ***** Interests ***** -->
+<section class="interests" id="interests">
+  <div class="row">
+    <h2>Interests</h2>
+    <div class="interests__content">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/math.png" alt="Mathematics">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Randomness in Mathematics</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/ai.png" alt="AI">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Artificial Intelligence</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/nn.png" alt="NN">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Neural Networking</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/arts.png" alt="Arts & Crafts">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Arts & Crafts</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/gaming.png" alt="Gaming">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Gaming</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="curricular__logo">
+              <img src="./images/origami.png" alt="Origami">
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <p>Origami</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          If you're looking to connect with me, I'd love to hear from you!
+          Whether it's to discuss the latest in tech, collaborate on an exciting project,
+          or simply share insights and knowledge, feel free to reach out. 
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:imamulmursalinsujoy@gmail.com" class="btn">imamulmursalinsujoy@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/imamulmursalinsujoy/" title="Link to Facebook Profile">
+            <img src="./images/face.webp" class="footer__social-image" alt="Facebook">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/immusu/" title="Link to Github Profile">
+            <img src="./images/g.webp" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/imamulmursalinsujoy/">
+            <img src="./images/link.webp" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.youtube.com/channel/UCLlMzULTYd_m11qGAGkbt8g">
+            <img src="./images/yt.png" title="Link to YouTube Channel" class="footer__social-image" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>

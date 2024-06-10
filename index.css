@@ -444,6 +444,18 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     align-items: center;
 }
+.work__item {
+    padding: 4rem 0;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .work__item.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
 
 @media(max-width: 900px) {
     .work__box {
@@ -455,6 +467,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__box:not(:last-child) {
     margin-bottom: 10rem;
 }
+
 
 @media(max-width: 500px) {
     .work__box:not(:last-child) {
@@ -636,6 +649,20 @@ body:not(.user-is-tabbing) a:focus {
   .education__item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
   }
+ 
+/* Education Section */
+.education__item {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Adjust transition duration and easing */
+}
+
+
+.education__item.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide to original position */
+}
+
   
   .education__logo {
     flex: 0 0 auto;
@@ -683,6 +710,20 @@ body:not(.user-is-tabbing) a:focus {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s;
   }
+
+/* Add this to your existing CSS */
+.curricular__item {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .curricular__item.visible {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  
   
   .curricular__item:hover {
     transform: translateY(-5px); /* Lift effect on hover */
@@ -765,6 +806,17 @@ body:not(.user-is-tabbing) a:focus {
     gap: 2em;
   }
 
+  .achievement__item {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .achievement__item.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
 
   .interests__content {
     display: flex;
@@ -834,3 +886,78 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0;
   }
   
+  .research__item {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .research__item.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  p {margin-top:1.5em}
+
+  /* About Section Animations */
+.about__photo-container {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about__text {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about__photo-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.about__text.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 16px solid var(--white-1);
+    border-top: 16px solid var(--pink);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide the main content until the page is loaded */
+#main-content {
+    display: none;
+}
+
+
+
+
+
+

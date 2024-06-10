@@ -18,6 +18,11 @@
 </head>
 
 <body>
+ <!-- Loading Screen -->
+ <div id="loading-screen">
+  <div class="spinner"></div>
+  </div>
+
 
   <!-- ***** Header ***** -->
 
@@ -27,9 +32,10 @@
         <ul class="nav__items">
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#research" class="nav__link">Research</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#curricular" class="nav__link">Curricular Activities</a></li>
+          <li class="nav__item"><a href="#curricular" class="nav__link">Curricular</a></li>
           <li class="nav__item"><a href="#achievements" class="nav__link">Achievements</a></li>
           <li class="nav__item"><a href="#interests" class="nav__link">Interests</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -39,7 +45,6 @@
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Md. Imamul Mursalin Sujoy</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
@@ -66,7 +71,7 @@
                professional abilities while driving technological innovation and excellence.
             </p>
             <!-- Provide a link to your resume -->
-            <a href="images/Resume.pdf" class="btn">My Resume</a>
+            <a href="files/Resume v3.pdf" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
@@ -103,22 +108,74 @@
           <p>Grade: GPA 5.00 on the scale of 5.00</p>
         </div>
       </div>
+      <div class="education__item">
+        <div class="education__logo">
+          <img src="./images/mitali.png" alt="BRAC University">
+        </div>
+        <div class="education__details">
+          <h3>Secondary School in Science</h3>
+          <p>Mitali Bidyapith High School, 2015 - 2017</p>
+          <p>Grade: GPA 5.00 on the scale of 5.00</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<section class="research" id="research">
+  <div class="row">
+    <h2>Research</h2>
+    <div class="research__content">
+      <div class="research__item">
+        <h3>Monocular Camera Fusion for Enhanced Depth
+          Sensing & Object Detection</h3>
+          <p>
+            <i>Supervisor: Dr. Md. Khalilur Rhaman, Professor, Department of CSE, BRAC University</i>
+          </p>
+        <p>In this era of technological advancement, autonomous vehicles strive towards 
+          revolutionizing the transportation system. A critical challenge in this domain is 
+          obstacle depth sensing in different environmental scenarios which is vital for 
+          ensuring safety. This research paper proposes an innovative approach MiDYOLO. This 
+          evolved approach is capable of addressing these challenges of obstacle depth sensing 
+          by incorporating monocular camera fusion with a dynamic algorithm for accurate depth 
+          detection and object identification. For detecting obstacles, autonomous vehicles rely 
+          on an array of sensors, including a combination of LiDAR, Radar, and cameras each of 
+          which has its strengths and limitations. Moreover, traditional modal systems combining 
+          LiDAR or Radar with camera vision often have efficiency and cost related drawbacks such 
+          as high cost or power demand and spatial resolution constraints. 
+        </p>
+          <p>
+          Furthermore, Bangladesh's 
+          road networks and challenging weather conditions makes the process more challenging. 
+          In order to optimize obstacle depth sensing based on these diverse scenarios and dynamic 
+          environmental conditions, our research proposes a concept with the fusion of monocular cameras 
+          with merging algorithms. Building upon the capabilities of YOLOv7 serving the purpose of object 
+          identification and Midas for accurate depth detection, MiDYOLO incorporates them in a seamless 
+          way to create an approach that delivers enhanced depth perception and object categorization. 
+          Alongside offering a promising trajectory for safer and more adaptive transportation in the 
+          future, our proposed system  MiDYOLO ensures efficiency and accuracy in obstacle depth detection.
+        </p>
+        <div class="work__links">
+          <a href="https://github.com/immusu/" target="_blank" class="link__text">
+          View The Paper
+          </a>
+</div>
+      </div>
+      <!-- Add more research items as needed -->
+    </div>
+  </div>
+</section>
+
+
+
     <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Space Survival Game</h3>
+<section class="work" id="work">
+  <div class="row">
+    <h2>Projects</h2>
+    <div class="work__content">
+      <div class="work__item">
+        <h3>Space Survival Game</h3>
               <p>
                 The Space Survival Game is an engaging arcade game developed as part of my computer graphics course, showcasing my proficiency 
                 in game design and implementation using OpenGL and related libraries. In this game, players navigate a spaceship through space, 
@@ -128,6 +185,8 @@
                 graphics techniques such as texture mapping, lighting, and animations to enhance the visual aesthetics and realism of the game. 
                 The game features a dynamically changing environment, with obstacles and enemies generated procedurally to ensure a unique and 
                 unpredictable experience in each playthrough.
+              </p>
+              <p>
                 In addition to the core mechanics, I implemented a user-friendly interface that includes score tracking, health indicators, 
                 and intuitive controls, making the game accessible to players of all skill levels. The development process involved thorough 
                 testing and optimization to ensure performance efficiency and a seamless gameplay experience.
@@ -140,13 +199,9 @@
                 <a href="https://github.com/immusu/Space-Survival-Game">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Heart Disease Prediction System</h3>
+      </div>
+      <div class="work__item">
+        <h3>Heart Disease Prediction System</h3>
               <p>
                 The Heart Disease Prediction System is an innovative prototype designed to leverage Artificial Intelligence for predicting the 
                 likelihood of heart disease in individuals. This system was developed as a comprehensive project, utilizing a historical dataset
@@ -157,7 +212,10 @@
                   the data to handle missing values, normalize features, and split the data into training and testing sets. I then implemented the KNN 
                   algorithm, which classifies a patient's condition based on the closest data points in the feature space. Next, I used the SVM model, 
                   which finds the optimal hyperplane that separates the classes of patients with and without heart disease. Finally, the Decision Tree 
-                  model was implemented to create a tree-like structure of decisions based on the input features. After training the models, I conducted
+                  model was implemented to create a tree-like structure of decisions based on the input features. 
+                </p>
+                <p>
+                  After training the models, I conducted
                    a comprehensive comparison of their performance using metrics such as accuracy, precision, recall, and F1-score. This comparative 
                    analysis revealed the strengths and weaknesses of each model in predicting heart disease. Additionally, I implemented cross-validation
                     techniques to ensure the robustness and generalizability of the models. The Heart Disease Prediction System provides an interactive 
@@ -171,13 +229,9 @@
                 <a href="https://github.com/immusu/-Heart-Disease-Prediction-System">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Fire Detection System</h3>
+      </div>
+      <div class="work__item">
+        <h3>Fire Detection System</h3>
               <p>
                 The Fire Detection System is a comprehensive hardware prototype designed to enhance fire safety through early 
                 detection and real-time alerts. The system employs a highly sensitive fire sensor, which promptly identifies 
@@ -185,6 +239,8 @@
                 providing an extra layer of hazard detection. Upon detecting a fire or hazardous gas levels, the system leverages 
                 the HC-05 Bluetooth module to transmit immediate hazard notifications to connected smartphones. This ensures that 
                 users receive timely alerts, allowing for quick response and mitigation of potential fire-related damages. 
+              </p>
+              <p>
                 The Bluetooth module's reliable communication capabilities facilitate seamless connectivity between the detection 
                 system and the users' mobile devices. The project also involves programming microcontrollers to process sensor 
                 data and manage the communication between sensors and smartphones. The system's design emphasizes ease of installation 
@@ -197,31 +253,39 @@
                 <a href="https://github.com/immusu/Fire-Detection-System">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Online Donation System</h3>
+      </div>
+      <div class="work__item">
+        <h3>Online Donation System</h3>
               <p>
-                The system is divided into two main panels: the Admin Panel and the Donor Panel, each with distinct 
-                functionalities tailored to their specific user roles. The Admin Panel allows administrators to manage 
-                and oversee the donation process effectively. Admins can add, update, or delete donation campaigns, 
-                track donation progress, and generate reports. This panel includes a dashboard that provides real-time 
-                statistics and analytics, helping admins to monitor the overall performance and engagement of the platform. 
-                Security features such as user authentication and role-based access control ensure that only authorized 
-                personnel can perform administrative tasks. The Donor Panel is designed to provide a straightforward 
-                and intuitive experience for donors. Donors can easily browse through various donation campaigns, select 
-                causes they wish to support, and make donations securely. The panel includes features such as donation 
-                history, recurring donations, and personalized thank-you messages. Donors can also create accounts to 
-                manage their profiles and track their contributions over time. The platform is built with PHP, 
-                leveraging its robust capabilities for dynamic content generation and database interaction. CSS is 
-                used to style the application, ensuring a clean and visually appealing interface. Bootstrap is incorporated 
-                to enhance responsiveness, allowing the system to function flawlessly on desktops, tablets, and mobile devices. 
-                Additional features include secure payment processing, real-time notifications, and search functionality to help 
-                users find specific campaigns quickly. The system also supports multiple payment gateways, ensuring flexibility 
-                and convenience for donors.
+                The system is divided into two main panels: the Admin Panel and the Donor Panel, 
+                each with distinct functionalities tailored to their specific user roles.
+              </p>
+              <p>
+Admin Panel:
+The Admin Panel allows administrators to manage and oversee the donation process effectively. 
+Admins can add, update, or delete donation campaigns, track donation progress, and generate reports. 
+This panel includes a dashboard that provides real-time statistics and analytics, helping admins to 
+monitor the overall performance and engagement of the platform. Security features such as user 
+authentication and role-based access control ensure that only authorized personnel can perform administrative tasks.
+</p>
+<p>
+Donor Panel:
+The Donor Panel is designed to provide a straightforward and intuitive experience for donors. 
+Donors can easily browse through various donation campaigns, select causes they wish to support, 
+and make donations securely. The panel includes features such as donation history, recurring donations, 
+and personalized thank-you messages. Donors can also create accounts to manage their profiles and track their contributions over time.
+</p>
+<p>
+Development and Features:
+The platform is built with PHP, leveraging its robust capabilities for dynamic content generation 
+and database interaction. CSS is used to style the application, ensuring a clean and visually appealing 
+interface. Bootstrap is incorporated to enhance responsiveness, allowing the system to function 
+flawlessly on desktops, tablets, and mobile devices.
+</p>
+<p>
+Additional features include secure payment processing, real-time notifications, and search functionality
+ to help users find specific campaigns quickly. The system also supports multiple payment gateways, 
+ ensuring flexibility and convenience for donors.
               </p>
               <div class="work__links">
                 <a href="https://github.com/immusu/Donation-Management-System_project" target="_blank" class="link__text">
@@ -230,13 +294,55 @@
                 <a href="https://github.com/immusu/Donation-Management-System_project">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Digital Clock System</h3>
+      </div>
+      <div class="work__item">
+        <h3>Greek Myth</h3>
+              <p>
+                TThe Greek Myth platform is an educational and interactive website designed to immerse 
+                users in the rich world of Greek mythology. This platform offers a comprehensive 
+                resource for learning about ancient myths through engaging articles, quizzes, and fun games.
+              </p>
+              <p>
+                Learning Resources:
+                At the heart of Greek Myth is a vast collection of meticulously researched articles that 
+                cover a wide range of topics related to Greek mythology. Users can explore detailed accounts 
+                of gods, heroes, and legendary creatures, as well as mythological tales and their historical 
+                contexts. Each article is written to be informative yet accessible, catering to both mythology 
+                enthusiasts and casual learners.
+              </p>
+              <p>
+                Interactive Quizzes:
+                To reinforce learning and make the exploration of Greek mythology more interactive, 
+                the platform features a variety of quizzes. These quizzes are designed to test users' 
+                knowledge and understanding of the myths they have read about. Quizzes range from 
+                multiple-choice questions to more challenging formats, offering instant feedback and 
+                explanations to enhance the learning experience.
+              </p>
+              <p>
+                Fun Games:
+                In addition to articles and quizzes, Greek Myth includes several fun games that provide an 
+                entertaining way to engage with mythological content. These games might involve matching 
+                characters to their myths, solving puzzles based on mythological stories, or embarking on 
+                virtual quests that mirror the adventures of Greek heroes. The games are designed to be both 
+                educational and enjoyable, encouraging users to delve deeper into the material.
+              </p>
+              <p>
+                Technical Implementation:
+                The Greek Myth platform is developed using modern web technologies to ensure a smooth 
+                and responsive user experience. The back-end is powered by a robust content management system, while 
+                the front-end utilizes HTML, CSS, and JavaScript for a dynamic and visually appealing interface. 
+                The system is designed to be scalable and easily maintainable.
+              </p>
+              <div class="work__links">
+                <a href="https://github.com/immusu/Donation-Management-System_project" target="_blank" class="link__text">
+                  View Source Code
+                </a>
+                <a href="https://github.com/immusu/Donation-Management-System_project">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+      </div>
+      <div class="work__item">
+        <h3>Digital Clock System</h3>
               <p>
                 The core of the system is the 555 timer IC, configured to generate precise timing pulses. 
                 These pulses are fed into the 7493 binary counter IC, which counts the pulses and translates 
@@ -246,6 +352,8 @@
                 Clock System includes a stopwatch mode, allowing users to measure elapsed time with precision. 
                 By integrating control switches, users can start, stop, and reset the stopwatch as needed. This 
                 dual functionality makes the system versatile and practical for various timekeeping needs. 
+              </p>
+              <p>
                 The synchronization feature is another highlight of this project. The clock can be synchronized 
                 with external clock frequencies, ensuring it remains accurate even when integrated into different 
                 systems or environments. This capability is achieved through adjustable frequency dividers and 
@@ -261,13 +369,12 @@
                 <a href="https://github.com/immusu/Digital-Clock-System">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
-    </section>
+      <!-- Add more work items as needed -->
+    </div>
+  </div>
+</section>
+
 
     <!-- ***** Skills ***** -->
 
@@ -332,85 +439,40 @@
   <div class="row">
     <h2>Achievements</h2>
     <div class="achievements__content">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>University Scholarship</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Achieved merit based scholarship from May, 2021 to September, 2024 at
-              BRAC University, Dhaka
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>University Scholarship</h3>
+        <p>Achieved merit based scholarship from May, 2021 to September, 2024 at
+          BRAC University, Dhaka</p>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>Best Artist Award</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Awarded for 'Best Artist' in 'S Talent' competition (2022) at 
-              Bangladesh Shilpakala Academy
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>Best Artist Award</h3>
+        <p>Awarded for 'Best Artist' in 'S Talent' competition (2022) at 
+          Bangladesh Shilpakala Academy</p>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>100% Attendance Award</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Awarded for full attendance at Notre Dame College, Dhaka
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>Full Attendance Award</h3>
+        <p>Awarded for full attendance at Notre Dame College, Dhaka</p>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>100% Tuition Fee Waiver</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Achieved full tuition fee waiver for best academic performance from 2010 to 2016 at 
-              Mitali Bidyapith High School, Dhaka
-              
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>100% Tuition Fee Waiver</h3>
+        <p>Achieved full tuition fee waiver for best academic performance from 2010 to 2016 at 
+          Mitali Bidyapith High School, Dhaka</p>
       </div>
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>1st Runner Up in Chess Competition</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Achieved 1st runner up in inter school chess competition (2016) at 
-              Mitali Bidyapith High School, Dhaka              
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>1st Runner Up in Chess Competition</h3>
+        <p>Achieved 1st runner up in inter school chess competition (2016) at 
+          Mitali Bidyapith High School, Dhaka</p>
       </div>
-
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h3>Winner in Essay Competition</h3>
-          </div>
-          <div class="flip-card-back">
-            <p>Achieved 1st place in intra school essay competition on 'Bangabandur Bangaldesh'
-               (2016) at 
-              Mitali Bidyapith High School, Dhaka
-                            
-              </p>
-          </div>
-        </div>
+      <div class="achievement__item">
+        <h3>Winner in Essay Competition</h3>
+        <p>Achieved 1st place in intra school essay competition on 'Bangabandur Bangaldesh'
+          (2016) at Mitali Bidyapith High School, Dhaka</p>
       </div>
+      <!-- Add more achievement items as needed -->
     </div>
   </div>
 </section>
+
 
 <!-- ***** Interests ***** -->
 <section class="interests" id="interests">
